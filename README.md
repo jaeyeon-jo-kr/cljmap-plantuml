@@ -30,4 +30,4 @@ Define clojure map and simply call generation function.
 
 Generated file "staff-graph.png" is belows :
 
-![Json image](staff-graph.jpg)
+![](https://github.com/jaeyeon-jo-kr/cljmap-plantuml/blob/main/staff-graph.png)
