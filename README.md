@@ -8,7 +8,7 @@ Cljmap-plantuml uses graphviz for generating image. Please refer to <https://gra
 
 ## Installation
 
-Installation is not ready.
+Installation is not ready yet.
 
 ## Usage
 
@@ -16,7 +16,7 @@ Define clojure map and simply call generation function.
 
 ```clojure
 (ns my-test
-    (:require [cljmap-view :refer [cljmap->image])))
+    (:require [cljmap-view :refer [cljmap->image]])))
 
 (def staff {:company "abc"
             :employees [{:name "kim" :phone "001-0000-0000"}
