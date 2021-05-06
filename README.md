@@ -4,11 +4,11 @@ Generate diagram from clojure map(or seq) using PlantUML json.
 
 ## Dependencies
 
-Cljmap-plantuml uses graphviz for generating image. Please refer to <https://graphviz.org/download/>. 
+Cljmap-plantuml uses graphviz for generating image. Please refer to <https://graphviz.org/download/> for installing software. 
 
 ## Installation
 
-Installation is not ready yet.
+Installation manual is not ready yet.
 
 ## Usage
 
@@ -40,11 +40,12 @@ To adding highlight effect to map graph, set option like belows :
     :address {:city "New York"
               :state "NY}
     :phoneNumbers [{:type "home" :number "212 555-1234"}]}
-    {:path "abcd.png"
+    {:path "highlight.png"
      :highlight [[:lastName]
                  [:address :city]
                  [:phoneNumbers 0 :number]]})
 ```
-The result is :
-![](https://github.com/jaeyeon-jo-kr/cljmap-plantuml/blob/main/staff-graph.png)
+Generated graph is :
+
+![](https://github.com/jaeyeon-jo-kr/cljmap-plantuml/blob/main/highlight.png)
 
