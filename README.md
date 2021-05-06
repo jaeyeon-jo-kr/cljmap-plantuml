@@ -45,3 +45,6 @@ To adding highlight effect to map graph, set option like belows :
                  [:address :city]
                  [:phoneNumbers 0 :number]]})
 ```
+The result is :
+![](https://github.com/jaeyeon-jo-kr/cljmap-plantuml/blob/main/staff-graph.png)
+
