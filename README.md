@@ -23,7 +23,7 @@ Define clojure map and simply call generation function.
                         {:name "lala" :phone "002-0000-0000"}]})
 
 
-(cljmap->image staff "staff-graph.png")
+(cljmap->image staff {:path "staff-graph.png"})
                      
 
 ```
@@ -31,3 +31,17 @@ Define clojure map and simply call generation function.
 Generated file "staff-graph.png" is belows :
 
 ![](https://github.com/jaeyeon-jo-kr/cljmap-plantuml/blob/main/staff-graph.png)
+
+To adding highlight effect to map graph, set option like belows : 
+
+```clojure
+(cljmap->image
+   {:firstName "John" :lastName "Smith"
+    :address {:city "New York"
+              :state "NY}
+    :phoneNumbers [{:type "home" :number "212 555-1234"}]}
+    {:path "abcd.png"
+     :highlight [[:lastName]
+                 [:address :city]
+                 [:phoneNumbers 0 :number]]})
+```
