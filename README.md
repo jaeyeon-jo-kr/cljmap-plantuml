@@ -8,7 +8,7 @@ Cljmap-plantuml uses graphviz for generating image. Please refer to <https://gra
 
 ## Installation
 
-Installation is not ready.
+Installation is not ready yet.
 
 ## Usage
 
@@ -16,7 +16,7 @@ Define clojure map and simply call generation function.
 
 ```clojure
 (ns my-test
-    (:require [cljmap-view :refer [cljmap->image])))
+    (:require [cljmap-view :refer [cljmap->image]])))
 
 (def staff {:company "abc"
             :employees [{:name "kim" :phone "001-0000-0000"}
@@ -30,4 +30,4 @@ Define clojure map and simply call generation function.
 
 Generated file "staff-graph.png" is belows :
 
-![Json image](staff-graph.jpg)
+![](https://github.com/jaeyeon-jo-kr/cljmap-plantuml/blob/main/staff-graph.png)
